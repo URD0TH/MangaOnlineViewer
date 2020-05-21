@@ -622,6 +622,27 @@
         }
       };
     }
+    
+  var tumangaonline = {
+    name: 'TuMangaOnline',
+    url: /https?:\/\/(www.)?lectortmo.com\/viewer\/.+\/(paginated|cascade)/,
+    homepage: 'http://tmohentai.com/',
+    language: ['Spanish'],
+    category: 'hentai',
+    run() {
+      const num = $('#viewer-pages-select:first option').get().length;
+      return {
+        title: $('title').text().trim(),
+        series: $('a[title="Volver"]').attr('href'),
+        quant: num,
+        prev: '#',
+        next: '#',
+        listPages: [...Array(num).keys()].map((i) => W.location.href.replace(/\/[0-9]+?$/, `/${i + 1}`)),
+        img: '.viewer-img',
+        lazyAttr: 'data-src'
+      };
+    }
+  };
   };
 
   var sites = [comicastle, disasterscans,
@@ -632,7 +653,8 @@
     mangainn, mangakakalot, mangalyght, mangapark, mangareader,
     mangasee, mangatown,
     readcomicsonline, readmangatoday, senmanga,
-    batoto
+    batoto,
+    tumangaonline
   ];
 
   function logScript(...text) {
