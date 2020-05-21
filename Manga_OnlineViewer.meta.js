@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name Manga OnlineViewer
+// @name Manga OnlineViewer fork  TagoDR
 // @author Tago
-// @updateURL https://github.com/TagoDR/MangaOnlineViewer/raw/master/Manga_OnlineViewer.meta.js
-// @downloadURL https://github.com/TagoDR/MangaOnlineViewer/raw/master/Manga_OnlineViewer.user.js
-// @namespace https://github.com/TagoDR
+// @updateURL https://github.com/URD0TH/MangaOnlineViewer/raw/master/Manga_OnlineViewer.meta.js
+// @downloadURL https://github.com/URD0TH/MangaOnlineViewer/raw/master/Manga_OnlineViewer.user.js
+// @namespace https://github.com/URD0TH
 // @description Shows all pages at once in online view for these sites: ComiCastle, DisasterScans, FoOlSlide, Funmanga, JaiminisBox, KissManga, Leitor, LHTranslation, MangaDex, MangaDoom, MangaFox, MangaHere, MangaInn, MangaKakalot,MangaNelo, MangaLyght, MangaPark, MangaReader,MangaPanda, MangaSee, MangaTown, ReadComicsOnline, ReadManga Today, SenManga(Raw), Batoto
 // @version 16.22.0
 // @license MIT
