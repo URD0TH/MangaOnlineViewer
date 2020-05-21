@@ -50,4 +50,5 @@
 // @exclude /https?:\/\/(www.)?pururin.io\/.+/
 // @exclude /https?:\/\/(www.)?hentainexus.com\/.+/
 // @exclude /https?:\/\/hentai.cafe\/.+/
+// @exclude /https?:\/\/(www.)?(tmofans|lectortmo|followmanga).com\/.+\/.+\/(paginated|cascade)/
 // ==/UserScript==
