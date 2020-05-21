@@ -1,7 +1,7 @@
 // == TMOFans ==================================================================================
 export default {
   name: 'TuMangaOnline',
-  url: /https?:\/\/(www.)?(tmofans|lectortmo|followmanga).com\/.+\/.+\/(paginated|cascade)/,
+  url: /https?:\/\/(www.)?(tmofans|lectortmo|followmanga).com\/viewer\/.+\/(paginated|cascade)/,
   homepage: 'https://lectortmo.com/',
   language: ['Spanish'],
   category: 'manga',
@@ -13,7 +13,8 @@ export default {
       quant: num,
       prev: '#',
       next: '#',
-      listPages: [...Array(num).keys()].map((i) => W.location.href.replace(/\/[0-9]+$/, `/${i + 1}`)),
+      listPages: [...Array(num)
+        .keys()].map((i) => W.location.href.replace(/\/[0-9]+?$/, `/${i + 1}`)),
       img: '.viewer-img',
       lazyAttr: 'data-src'
     };
